@@ -14,7 +14,15 @@ endstruc
 section .text
 	global ft_list_push_front:
 
+	extern malloc
+
 ft_list_push_front:
+	
+	mov rbx, rdi			; save list head (**) to rbx
+
+	mov rdi, 16				; sizeof t_list node
+	call malloc wrt ..plt	; get malloc'ed result in rax
+
 	
 
 	ret
