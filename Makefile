@@ -20,8 +20,11 @@ SRC_ASM		=	$(addprefix src/,			\
 						ft_strlen.s			\
 						ft_write.s			\
 					)						\
-					$(addprefix bonus/,	\
+					$(addprefix bonus/,		\
 						ft_atoi_base.s		\
+						ft_list_push_front.s\
+						ft_list_size.s		\
+						ft_list_sort.s		\
 					)						\
 				)
 
